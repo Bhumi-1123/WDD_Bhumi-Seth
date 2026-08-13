@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types Demonstration</title>
+    <!-- external CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- internal CSS-->
+      <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .internal-section{
+            background-color: rgb(227, 223, 223);
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0.1);
+        }
+
+        .internal-section h2  {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+        }
+        .internal-box {
+            background-color: blueviolet;
+            padding: 20px;
+            border-left: 6px solid silver;
+            margin-top: 15px;
+        }
+      </style>
+</head>
+<body>
+    <!--inline CSS-->
+    <header style="
+    background-color: lavender;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    ">
+         <h1 style="font-size: 40px;margin: 0;">
+            CSS Types Demonstration
+        </h1>
+
+        <p style="font-size: 18px;">
+            Inline, Internal and External CSS
+        </p>
+</header>"
+
+    <!--INTERNAL CSS SECTION-->
+    <section class="internal-section">
+
+    <h2>2 . Internal CSS</h2>
+    <P>
+        The Styling of this section is written inside the &lt;style &gt; tag in the HTML document.
+
+    </P>
+    <div class="internal-box">
+        This box is styled using Internal Css.
+    </div>
+    </section>
+    <section class="external-section">
+
+    <h2>2 . external CSS</h2>
+    <P>
+        The Styling of this section is written inside the &lt;style &gt; tag in the HTML document.
+
+    </P>
+    <div class="external-box">
+        This box is styled using external Css.
+    </div>
+    </section>
+</body>
+</html>
